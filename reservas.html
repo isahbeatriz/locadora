@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+     
+        <a href="inicio.html">Inicio</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="veiculos.html">Veículos</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="revisoes.html">Revisões</a>
+        <a href="confirmação.html">Confirmação</a>
+      </nav>l
+      </nav>
+  <main class="form-container">
+    <h2>Reservar Veículo</h2>
+    <form action="confirmacao.html" method="post">
+      <label for="cliente">Nome do Cliente:</label>
+      <input type="text" id="cliente" name="cliente" required />
+
+      <label for="veiculo">Veículo:</label>
+      <select id="veiculo" name="veiculo" required>
+        <option value="">Selecione</option>
+        <option value="Fiat Argo">Fiat Argo</option>
+        <option value="Chevrolet Onix">Chevrolet Onix</option>
+      </select>
+
+      <label for="retirada">Data de Retirada:</label>
+      <input type="date" id="retirada" name="retirada" required />
+
+      <label for="devolucao">Data de Devolução:</label>
+      <input type="date" id="devolucao" name="devolucao" required />
+
+      <button type="submit">Confirmar Reserva</button>
+    </form>
+  </main>
+</body>
+</html>
